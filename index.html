@@ -97,13 +97,24 @@
             background-color: var(--accent-color);
         }
 
-        /* --- HERO SECTION --- */
+        /* --- HERO SECTION & TENTANG SAYA --- */
         #hero {
             min-height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding-top: 4rem;
+        }
+
+        .hero-content-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* 2 bagian teks, 1 bagian foto */
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text-block {
+            /* Gaya teks dari codingan sebelumnya */
         }
 
         .hero-badge {
@@ -118,7 +129,7 @@
         }
 
         #hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem; /* Sedikit dikecilkan agar seimbang dengan foto */
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 1.5rem;
@@ -126,18 +137,18 @@
         }
 
         #hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem; /* Sedikit dikecilkan */
             color: var(--secondary-text);
-            max-width: 700px;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .motto {
             font-style: italic;
             border-left: 3px solid var(--accent-color);
             padding-left: 1rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             color: var(--secondary-text);
+            font-size: 1rem;
         }
 
         .btn {
@@ -153,6 +164,19 @@
 
         .btn:hover {
             background-color: var(--accent-color);
+        }
+
+        .hero-image-block {
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 250px; /* Ukuran foto */
+            height: 250px;
+            border-radius: 50%; /* Membuat foto melingkar */
+            object-fit: cover; /* Memastikan foto tidak distorsi */
+            border: 5px solid #fff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Efek bayangan */
         }
 
         /* --- KEAHLIAN --- */
@@ -310,7 +334,25 @@
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             #hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+            }
+            .hero-content-wrapper {
+                grid-template-columns: 1fr; /* Teks dan foto menumpuk secara vertikal */
+                text-align: center;
+                gap: 2rem;
+            }
+            .hero-badge {
+                margin: 0 auto 1.5rem auto; /* Badge rata tengah */
+            }
+            .motto {
+                border-left: none;
+                border-top: 3px solid var(--accent-color);
+                padding-left: 0;
+                padding-top: 1rem;
+            }
+            .profile-pic {
+                width: 200px;
+                height: 200px;
             }
             nav {
                 display: none;
@@ -341,17 +383,27 @@
 
     <!-- HERO / TENTANG SAYA SECTION -->
     <section id="hero">
-        <div class="hero-badge">Tersedia untuk Peluang Kerja & Magang</div>
-        <h1>Membangun Solusi Digital dengan Ketelitian & Adaptabilitas Tinggi</h1>
-        <p>Saya adalah seorang <strong>Web Developer</strong> yang memiliki semangat tinggi untuk terus belajar. Saya percaya bahwa ilmu pengetahuan tidak memiliki batas, sehingga saya selalu antusias mengeksplorasi berbagai bidang baru—mulai dari teknologi informasi, manajemen sistem, hingga dunia kuliner.</p>
-        <p style="font-size: 1rem; margin-bottom: 1.5rem;">Selain latar belakang IT, pengalaman dinamis sebagai <strong>Chef</strong> telah membentuk saya menjadi pribadi yang disiplin, tangguh di bawah tekanan, memiliki manajemen waktu yang ketat, serta berorientasi penuh pada kepuasan pelanggan.</p>
-        
-        <div class="motto">
-            "Belajar tidak pernah berhenti. Setiap tantangan adalah kesempatan untuk berkembang."
-        </div>
+        <div class="hero-content-wrapper">
+            <!-- Bagian Teks -->
+            <div class="hero-text-block">
+                <div class="hero-badge">Tersedia untuk Peluang Kerja & Magang</div>
+                <h1>Membangun Solusi Digital dengan Ketelitian & Adaptabilitas Tinggi</h1>
+                <p>Saya adalah seorang <strong>Web Developer</strong> yang memiliki semangat tinggi untuk terus belajar. Saya percaya bahwa ilmu pengetahuan tidak memiliki batas, sehingga saya selalu antusias mengeksplorasi berbagai bidang baru—mulai dari teknologi informasi, manajemen sistem, hingga dunia kuliner.</p>
+                <p style="font-size: 0.95rem; margin-bottom: 1rem;">Selain latar belakang IT, pengalaman dinamis sebagai <strong>Chef</strong> telah membentuk saya menjadi pribadi yang disiplin, tangguh di bawah tekanan, memiliki manajemen waktu yang ketat, serta berorientasi penuh pada kepuasan pelanggan.</p>
+                
+                <div class="motto">
+                    "Belajar tidak pernah berhenti. Setiap tantangan adalah kesempatan untuk berkembang."
+                </div>
 
-        <div>
-            <a href="#kontak" class="btn">Hubungi Saya</a>
+                <div>
+                    <a href="#kontak" class="btn">Hubungi Saya</a>
+                </div>
+            </div>
+
+            <!-- Bagian Foto -->
+            <div class="hero-image-block">
+                <img src="WhatsApp Image 2026-07-06 at 08.47.18.jpeg" alt="Foto Profil Azhar" class="profile-pic">
+            </div>
         </div>
     </section>
 
