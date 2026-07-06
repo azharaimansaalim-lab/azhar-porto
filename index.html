@@ -15,16 +15,16 @@
         }
 
         :root {
-            --bg-color: #fcfcfd;
+            --bg-color: #f8fafc;
             --text-color: #1e293b;
             --accent-color: #2563eb;
             --accent-light: #eff6ff;
             --card-bg: #ffffff;
-            --border-color: #f1f5f9;
+            --border-color: #e2e8f0;
             --secondary-text: #64748b;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.02);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
             --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.05), 0 10px 10px -5px rgba(0,0,0,0.02);
+            --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.03);
         }
 
         body {
@@ -82,7 +82,7 @@
 
         /* --- GLOBAL SECTIONS --- */
         section {
-            padding: 8rem 2rem 5rem 2rem;
+            padding: 8rem 2rem 4rem 2rem;
             max-width: 1140px;
             margin: 0 auto;
         }
@@ -112,7 +112,7 @@
             min-height: 90vh;
             display: flex;
             align-items: center;
-            padding-top: 5rem;
+            padding-top: 6rem;
         }
 
         .hero-content-wrapper {
@@ -157,10 +157,12 @@
             margin: 2rem 0;
             color: var(--secondary-text);
             font-size: 1.05rem;
-            background: #f8fafc;
+            background: #ffffff;
             padding-top: 0.75rem;
             padding-bottom: 0.75rem;
             border-radius: 0 8px 8px 0;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-color);
         }
 
         .btn {
@@ -191,7 +193,7 @@
         .profile-card {
             position: relative;
             background: linear-gradient(135deg, var(--accent-light) 0%, #fff 100%);
-            padding: 1.5rem;
+            padding: 1.2rem;
             border-radius: 24px;
             box-shadow: var(--shadow-lg);
             border: 1px solid rgba(255,255,255,0.8);
@@ -199,10 +201,10 @@
 
         .profile-pic {
             width: 280px;
-            height: 340px;
+            height: 350px;
             border-radius: 16px;
             object-fit: cover;
-            object-position: center 20%;
+            object-position: center;
             box-shadow: var(--shadow-md);
             display: block;
         }
@@ -424,7 +426,7 @@
             }
             .profile-pic {
                 width: 260px;
-                height: 310px;
+                height: 320px;
             }
             .skills-container, .timeline-grid, .extra-grid {
                 grid-template-columns: 1fr;
@@ -470,11 +472,11 @@
             <div class="hero-text-block">
                 <div class="hero-badge">Tersedia untuk Peluang Kerja & Magang</div>
                 <h1>Membangun Solusi Digital dengan Ketelitian Tinggi</h1>
-                <p>Saya adalah seorang <strong>Web Developer</strong> yang memiliki semangat tinggi untuk terus belajar. Saya percaya bahwa ilmu pengetahuan tidak memiliki batas, sehingga saya selalu antusias mengeksplorasi berbagai bidang baru—mulai dari teknologi informasi, manajemen sistem, hingga dunia kuliner.</p>
-                <p style="font-size: 0.95rem; margin-bottom: 1rem;">Selain latar belakang IT, pengalaman dinamis sebagai <strong>Chef</strong> telah membentuk saya menjadi pribadi yang disiplin, tangguh di bawah tekanan, memiliki manajemen waktu yang ketat, serta berorientasi penuh pada kepuasan pelanggan.</p>
+                <p>Saya adalah seorang <strong>Web Developer</strong> lulusan SMKN 1 Plupuh jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki semangat tinggi untuk terus berkembang di industri teknologi informasi.</p>
+                <p style="font-size: 0.95rem; margin-bottom: 1rem;">Selain latar belakang kuat di bidang software engineering, pengalaman dinamis saya sebagai <strong>Chef</strong> telah membentuk karakter yang sangat disiplin, tangguh bekerja di bawah tekanan tinggi, memiliki manajemen waktu yang ketat, serta berorientasi penuh pada detail.</p>
                 
                 <div class="motto">
-                    "Belajar tidak pernah berhenti. Setiap tantangan adalah kesempatan untuk berkembang."
+                    "Belajar tidak pernah berhenti. Setiap tantangan coding maupun industri adalah kesempatan untuk menciptakan solusi terbaik."
                 </div>
 
                 <div>
@@ -485,8 +487,8 @@
             <!-- Bagian Foto -->
             <div class="hero-image-block">
                 <div class="profile-card">
-                    <!-- Target file gambar Anda sekarang menggunakan profil.jpg -->
-                    <img src="profil.jpg.jpeg" alt="Foto Profil Azhar Saalim" class="profile-pic">
+                    <!-- Memperbaiki penulisan ekstensi file gambar menjadi profil.jpg -->
+                    <img src="profil.jpg" alt="Foto Profil Azhar Saalim" class="profile-pic">
                 </div>
             </div>
         </div>
@@ -500,12 +502,11 @@
             <div class="skills-block">
                 <h3>💻 Hard Skills</h3>
                 <div class="skill-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
+                    <span class="tag">HTML5 / CSS3</span>
                     <span class="tag">JavaScript</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">Microsoft Office</span>
+                    <span class="tag">PHP Pemrograman</span>
+                    <span class="tag">MySQL Database</span>
+                    <span class="tag">Microsoft Office Suite</span>
                 </div>
             </div>
             <!-- Soft Skills -->
@@ -514,7 +515,7 @@
                 <div class="skill-tags">
                     <span class="tag">Problem Solving</span>
                     <span class="tag">Critical Thinking</span>
-                    <span class="tag">Team Work</span>
+                    <span class="tag">Teamwork & Collaboration</span>
                     <span class="tag">Fast Learner</span>
                     <span class="tag">Communication</span>
                     <span class="tag">Time Management</span>
@@ -565,14 +566,14 @@
                     <div class="timeline-date">Pendidikan Tinggi</div>
                     <h3>Mahasiswa Aktif</h3>
                     <div class="timeline-company">STMIK AMIKOM Kartasura</div>
-                    <p style="color: var(--secondary-text); font-size: 0.95rem;">Melanjutkan pendalaman teori ilmu komputer, arsitektur software, serta manajemen teknologi informasi.</p>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem;">Melanjutkan pendalaman teori ilmu komputer, arsitektur software, serta manajemen teknologi informasi berskala industri.</p>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-date">Pendidikan Menengah Kejuruan</div>
-                    <h3>Rekayasa Perangkat Lunak (RPL)</h3>
+                    <h3>Alumni - Rekayasa Perangkat Lunak (RPL)</h3>
                     <div class="timeline-company">SMKN 1 Plupuh</div>
-                    <p style="color: var(--secondary-text); font-size: 0.95rem;">Mempelajari dasar logika pemrograman, algoritma struktur data, pengelolaan basis data, dan pembuatan aplikasi web.</p>
+                    <p style="color: var(--secondary-text); font-size: 0.95rem;">Fokus mendalami logika pemrograman, pengembangan aplikasi web, algoritma struktur data, serta manajemen basis data.</p>
                 </div>
             </div>
         </div>
